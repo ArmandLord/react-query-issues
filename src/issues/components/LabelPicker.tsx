@@ -1,10 +1,11 @@
 import UseLabels from "../../hooks/UseLabels";
+import Loading from "../../shared/components/Loading";
 
 export const LabelPicker = () => {
   const { query } = UseLabels();
 
   if (query.isLoading) {
-    return <h1>Loading...</h1>;
+    return <Loading />;
   }
   return (
     <div>
