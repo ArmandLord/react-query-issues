@@ -4,9 +4,8 @@ import { githubApi } from "../../api/githubApi";
 import { PropsLabels } from "../interfaces/label";
 
 export const LabelPicker = () => {
-  const getLabels = async (): Promise<PropsLabels> => {
-    const { data } = await githubApi.get("/labels");
-    console.log(data);
+  const getLabels = async (): Promise<PropsLabels[]> => {
+    const { data } = await githubApi.get<PropsLabels[]>("/labels");
 
     return data;
   };
