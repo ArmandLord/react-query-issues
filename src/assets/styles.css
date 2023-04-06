@@ -22,7 +22,7 @@ h3 {
 
 .avatar {
   width: 35px;
-  border: 2px solid #222529;
+  /* border: 2px solid #222529; */
   border-radius: 100%;
 }
 
@@ -33,11 +33,11 @@ h3 {
 
 .label-picker:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .loader {
-  animation: spin-animation 0.5s infinite linear;
+  animation: spin-animation 0.2s infinite linear;
   display: block;
 }
 
@@ -48,4 +48,9 @@ h3 {
   100% {
     transform: rotate(365deg);
   }
+}
+
+.label-active {
+  /* background-color: red; */
+  background: rgba(255, 255, 255, 0.5);
 }
